@@ -14,6 +14,7 @@ in
   config = lib.mkIf cfg.enable {
     programs.alacritty = {
       enable = true;
+      package = null;
       settings = {
         font = {
           # normal = {
