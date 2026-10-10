@@ -34,7 +34,7 @@
         modules = [
 					nvf.homeManagerModules.default
 					stylix.homeModules.stylix
-					./home.nix
+					./deizu.nix
 				];
       };
     };
