@@ -10,6 +10,7 @@ in
   config = lib.mkIf cfg.zsh.enable {
     programs.zsh = {
       enable = true;
+      package = null;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       initContent = ''
