@@ -1,6 +1,12 @@
 [backdrop]
 enabled = true
 
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    enabled = true
+
 [dock]
 active_monitor_only = true
 
@@ -58,35 +64,32 @@ wallpaper_scheme = "faithful"
     [theme.templates]
     builtin_ids = [ "btop", "niri" ]
 
-[wallpaper.default]
-path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
+[wallpaper]
+directory = "/home/deizu/Pictures/Wallpapers"
 
-[wallpaper.last]
-path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
+    [wallpaper.default]
+    path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
 
-[wallpaper.monitors.DP-1]
-path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
+    [wallpaper.last]
+    path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
 
-[[wallpaper.favorite]]
-builtin_palette = "Rosé Pine"
-palette_source = "builtin"
-path = "/home/deizu/Pictures/Wallpapers/8scale.png"
-theme_mode = "dark"
+    [wallpaper.monitors.DP-1]
+    path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
 
-[[wallpaper.favorite]]
-builtin_palette = "Rosé Pine"
-palette_source = "builtin"
-path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
-theme_mode = "dark"
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/deizu/Pictures/Wallpapers/arcade - offset.jpg"
+    theme_mode = "dark"
 
-[[wallpaper.favorite]]
-builtin_palette = "Rosé Pine"
-palette_source = "builtin"
-path = "/home/deizu/Pictures/Wallpapers/big shoulders - outline.jpg"
-theme_mode = "dark"
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/deizu/Pictures/Wallpapers/big shoulders - outline.jpg"
+    theme_mode = "dark"
 
-[[wallpaper.favorite]]
-builtin_palette = "Rosé Pine"
-palette_source = "builtin"
-path = "/home/deizu/Pictures/Wallpapers/n-cubed-2025-moon.png"
-theme_mode = "dark"
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/deizu/Pictures/Wallpapers/n-cubed-2025-moon.png"
+    theme_mode = "dark"
