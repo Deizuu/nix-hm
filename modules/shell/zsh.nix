@@ -15,9 +15,10 @@ in
       syntaxHighlighting.enable = true;
       initContent = ''
         alias ls="ls --color=auto"
-        export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
         export GPG_TTY=$(tty)
         gpgconf --launch gpg-agent
+        gpg-connect-agent updatestartuptty /bye >/dev/null
+        export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
       '';
     };
     home.shell.enableZshIntegration = true;
