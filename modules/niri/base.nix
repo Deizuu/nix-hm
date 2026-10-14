@@ -17,7 +17,7 @@ in
   config = lib.mkIf cfg.enable {
     home.file = {
       ".config/niri/config.kdl".source = assets/niri-config.kdl;
-      ".config/noctalia/config.toml".source = assets/noctalia-config.toml;
+      ".config/noctalia/settings.toml".source = assets/noctalia-config.toml;
     };
   };
 }
