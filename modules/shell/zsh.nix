@@ -15,6 +15,8 @@ in
       syntaxHighlighting.enable = true;
       initContent = ''
         alias ls="ls --color=auto"
+        alias ssh="TERM=xterm ssh" # Fix lack of colors in SSH
+
         export GPG_TTY=$(tty)
         gpgconf --launch gpg-agent
         gpg-connect-agent updatestartuptty /bye >/dev/null
