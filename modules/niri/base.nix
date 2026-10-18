@@ -16,8 +16,13 @@ in
   };
   config = lib.mkIf cfg.enable {
     home.file = {
-      ".config/niri/config.kdl".source = assets/niri-config.kdl;
-      ".config/noctalia/settings.toml".source = assets/noctalia-config.toml;
+      ".config/niri".source = assets/niri;
+    };
+
+    programs.noctalia = {
+      enable = true;
+      settings = assets/noctalia-config.toml;
+      package = null;
     };
   };
 }
