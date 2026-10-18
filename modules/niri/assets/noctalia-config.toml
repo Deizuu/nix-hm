@@ -10,10 +10,6 @@ order = [ "default" ]
 [dock]
 active_monitor_only = true
 
-[location]
-***REMOVED***
-auto_locate = true
-
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
