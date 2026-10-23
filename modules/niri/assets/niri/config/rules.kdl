@@ -13,22 +13,21 @@ window-rule {
     }
 }
 
+// Block password managers from screen capture
 window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    match title="Bitwarden"
+    match title="Password"
 
     block-out-from "screen-capture"
 }
 
+// Rounded corners
 window-rule {
-  // Rounded corners for a modern look.
   geometry-corner-radius 15
-
-  // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
 }
 
-// Floating Noctalia settings window.
+// Floating Noctalia settings window
 window-rule {
   match app-id="dev.noctalia.Noctalia"
   open-floating true
@@ -36,11 +35,14 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
+// Noctalia overview backdrop
 layer-rule {
 	match namespace="^noctalia-backdrop"
 	place-within-backdrop true
 }
 
+// Remove the background that borders draw
+// so that transparent windows aren't tinted
 window-rule {
   draw-border-with-background false
 }

@@ -314,6 +314,8 @@ environment {
 }
 
 
-include "noctalia.kdl"
 
 include "config/binds.kdl"
+include "config/rules.kdl"
+
+// include "noctalia.kdl"

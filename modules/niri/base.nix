@@ -18,11 +18,5 @@ in
     home.file = {
       ".config/niri".source = assets/niri;
     };
-
-    programs.noctalia = {
-      enable = true;
-      settings = assets/noctalia-config.toml;
-      package = null;
-    };
   };
 }
