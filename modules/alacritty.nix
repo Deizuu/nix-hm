@@ -17,15 +17,10 @@ in
       package = null;
       settings = {
         font = {
-          # normal = {
-          # family = lib.mkForce "JetBrainsMono Nerd Font";
-          # style = "Regular";
-          # };
           size = lib.mkForce 10;
         };
 
         window = {
-          decorations = "None";
           opacity = lib.mkForce 0.6;
           blur = true;
         };
