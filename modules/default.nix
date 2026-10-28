@@ -6,5 +6,6 @@
     ./niri
     ./shell
     ./stylix.nix
+    ./tmux
   ];
 }
