@@ -13,7 +13,7 @@ binds {
     // ___ Apps ___
     Mod+Return hotkey-overlay-title="Open terminal emulator" { spawn "alacritty"; }
 		Mod+Shift+W hotkey-overlay-title="Open browser" { spawn "librewolf"; }
-		Mod+E hotkey-overlay-title="Open file manager" { spawn "nautilus"; }
+		Mod+E hotkey-overlay-title="Open file manager" { spawn "dolphin"; }
 
 
     // ___ Audio & Brightness ___
